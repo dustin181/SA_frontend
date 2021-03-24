@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const App = () => {
-    const buttonText = 'Hello world';
+function getButtonText() {
+    return 'Hi There'
+}
 
+const App = () => {
     return(
         <div>
             <label htmlFor="name" className="label">enter email</label>
             <input id="name" type="text"/>
             <button style={{backgroundColor: 'red', color: 'white'}}>
-                { buttonText }
+                { getButtonText() }
             </button>
         </div>
 
